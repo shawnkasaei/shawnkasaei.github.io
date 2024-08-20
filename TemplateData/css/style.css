@@ -1,6 +1,9 @@
 body {
     margin: 0;
     padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background: #000000;
 }
 
 #unity-container {
@@ -10,7 +13,6 @@ body {
 }
 
 #unity-canvas {
-    background: #000000;
     position: inherit;
     width: 100%;
     height: 100%;
