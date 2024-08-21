@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Sheep Coin Demo</title>
-    <link rel="stylesheet" href="TemplateData/css/style.css">
+    <title>{{PRODUCT_NAME}}</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -18,59 +18,7 @@
             </div>
         </div>
     </div>
-    <script>
-        var loaderUrl = "Build/Build.loader.js";
-        var config = {
-            dataUrl: "Build/Build.data",
-            frameworkUrl: "Build/Build.framework.js",
-            codeUrl: "Build/Build.wasm",
-            streamingAssetsUrl: "StreamingAssets",
-            companyName: "Shawn Kasaei",
-            productName: "Sheep Coin Demo",
-            productVersion: "0.1.0.5",
-        };
-        var container = document.querySelector("#unity-container");
-        var canvas = document.querySelector("#unity-canvas");
-        var loadingBar = document.querySelector("#unity-loading-bar");
-        var progressBarFull = document.querySelector("#unity-progress-bar-full");
-        var gameInstance = null;
-
-        if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-            config.devicePixelRatio = 1;
-        }
-
-        loadingBar.style.display = "block";
-
-        var script = document.createElement("script");
-
-        script.src = loaderUrl;
-
-        script.onload = () => {
-            createUnityInstance(canvas, config, (progress) => {
-                progressBarFull.style.width = 100 * progress + "%";
-            }).then((unityInstance) => {
-                gameInstance = unityInstance;
-                loadingBar.style.display = "none";
-                
-                // Run your custom code here after the game has fully loaded
-                onGameLoaded();
-            }).catch((message) => {
-                alert(message);
-            });
-        };
-
-        window.onbeforeunload = function (e) {
-            gameInstance.SendMessage("OnCloseListener", "OnClose");
-        };
-
-        document.body.appendChild(script);
-
-        // Custom function that runs after the game is loaded
-        function onGameLoaded() {
-            // Add your custom JS logic here
-            gameInstance.SendMessage("TelegramIntegration", "SetUserName", "userName");
-        }
-    </script>
+    <script src="javascript/script.js"></script>
 </body>
 
 </html>
