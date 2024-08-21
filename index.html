@@ -27,7 +27,7 @@
             streamingAssetsUrl: "StreamingAssets",
             companyName: "Shawn Kasaei",
             productName: "Sheep Coin Demo",
-            productVersion: "0.1.0.4",
+            productVersion: "0.1.0.5",
         };
         var container = document.querySelector("#unity-container");
         var canvas = document.querySelector("#unity-canvas");
@@ -70,7 +70,7 @@
             console.log("Unity WebGL game is fully loaded!");
 
             // Add your custom JS logic here
-            gameInstance.SendMessage("TelegramIntegration", "RecieveData", "userName");
+            gameInstance.SendMessage("TelegramIntegration", "SetUserName", "userName");
         }
     </script>
 </body>
