@@ -67,8 +67,6 @@
 
         // Custom function that runs after the game is loaded
         function onGameLoaded() {
-            console.log("Unity WebGL game is fully loaded!");
-
             // Add your custom JS logic here
             gameInstance.SendMessage("TelegramIntegration", "SetUserName", "userName");
         }
