@@ -1,13 +1,13 @@
-var loaderUrl = "Build/Build.loader.js";
 var config = {
-    dataUrl: "{{DATA_URL}}",
-    frameworkUrl: "{{FRAMEWORK_URL}}",
-    codeUrl: "{{CODE_URL}}",
-    streamingAssetsUrl: "{{STREAMING_ASSETS_URL}}",
-    companyName: "{{COMPANY_NAME}}",
-    productName: "{{PRODUCT_NAME}}",
-    productVersion: "{{PRODUCT_VERSION}}",
-};
+    dataUrl: buildUrl + "/Build.data",
+    frameworkUrl: buildUrl + "/Build.framework.js",
+    codeUrl: buildUrl + "/Build.wasm",
+    streamingAssetsUrl: "StreamingAssets",
+    companyName: "ShawnKasaei",
+    productName: "SheepCoin",
+    productVersion: "0.1.0.5",
+    // additional options can go here, see below
+  };
 var container = document.querySelector("#unity-container");
 var canvas = document.querySelector("#unity-canvas");
 var loadingBar = document.querySelector("#unity-loading-bar");
@@ -20,10 +20,10 @@ if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
 
 loadingBar.style.display = "block";
 
+var buildUrl = "Build";
+var loaderUrl = buildUrl + "/Build.loader.js";
 var script = document.createElement("script");
-
 script.src = loaderUrl;
-
 script.onload = () => {
     createUnityInstance(canvas, config, (progress) => {
         progressBarFull.style.width = 100 * progress + "%";
