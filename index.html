@@ -51,6 +51,7 @@
             }).then((unityInstance) => {
                 gameInstance = unityInstance;
                 loadingBar.style.display = "none";
+                gameInstance.SendMessage("TelegramIntegration", "RecieveData", "test");
             }).catch((message) => {
                 alert(message);
             });
