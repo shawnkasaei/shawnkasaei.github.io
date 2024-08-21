@@ -59,6 +59,20 @@
         window.onbeforeunload = function (e) {
             gameInstance.SendMessage("OnCloseListener", "OnClose");
         };
+     
+        function GetTelegramUsername() {
+            if (WebApp && WebApp.initDataUnsafe && WebApp.initDataUnsafe.user) {
+                return WebApp.initDataUnsafe.user;
+            } else {
+                return "No Username";
+            }
+        }
+
+        function SendUsernameToUnity() {
+            var username = GetTelegramUsername();
+            // Send the username back to Unity using SendMessage
+            gameInstance.SendMessage('TelegramIntegration', 'ReceiveUsername', username);
+        }
 
         document.body.appendChild(script);
     </script>
