@@ -6,7 +6,7 @@ var config = {
     streamingAssetsUrl: "StreamingAssets",
     companyName: "ShawnKasaei",
     productName: "SheepCoin",
-    productVersion: "0.1.0.5",
+    productVersion: "0.1.0.6",
   };
 var container = document.querySelector("#unity-container");
 var canvas = document.querySelector("#unity-canvas");
