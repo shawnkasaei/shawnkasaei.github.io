@@ -43,5 +43,5 @@ window.onbeforeunload = function (e) {
 document.body.appendChild(script);
 
 function onGameLoaded() {
-    gameInstance.SendMessage("TelegramIntegration", "SetUserName", "userName");
+    gameInstance.SendMessage("TelegramIntegration", "SetUserName", "TelegramInitData");
 }
