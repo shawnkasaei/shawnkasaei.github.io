@@ -4,9 +4,9 @@ var config = {
     frameworkUrl: buildUrl + "/Build.framework.js",
     codeUrl: buildUrl + "/Build.wasm",
     streamingAssetsUrl: "StreamingAssets",
-    companyName: "ShawnKasaei",
-    productName: "SheepCoin",
-    productVersion: "0.1.0.6",
+    companyName: "PAZH PLANET",
+    productName: "PAZHGAME",
+    productVersion: "0.1.0.7",
   };
 var container = document.querySelector("#unity-container");
 var canvas = document.querySelector("#unity-canvas");
@@ -43,5 +43,5 @@ window.onbeforeunload = function (e) {
 document.body.appendChild(script);
 
 function onGameLoaded() {
-    gameInstance.SendMessage("TelegramIntegration", "SetUserName", "TelegramInitData");
-}
+    gameInstance.SendMessage("TelegramIntegration", "SetUserName", window.Telegram.WebApp.initData);
+}g
