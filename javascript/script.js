@@ -5,8 +5,8 @@ var config = {
     codeUrl: buildUrl + "/Build.wasm",
     streamingAssetsUrl: "StreamingAssets",
     companyName: "PAZH PLANET",
-    productName: "PAZHGAME",
-    productVersion: "0.1.0.7",
+    productName: "PAZH COIN",
+    productVersion: "0.1.0.8",
   };
 var container = document.querySelector("#unity-container");
 var canvas = document.querySelector("#unity-canvas");
@@ -43,5 +43,5 @@ window.onbeforeunload = function (e) {
 document.body.appendChild(script);
 
 function onGameLoaded() {
-    gameInstance.SendMessage("TelegramIntegration", "SetUserName", window.Telegram.WebApp.initData);
+    gameInstance.SendMessage("TelegramIntegration", "SetUserInfo", window.Telegram.WebApp.initData);
 }
