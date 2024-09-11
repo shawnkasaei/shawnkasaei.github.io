@@ -44,4 +44,4 @@ document.body.appendChild(script);
 
 function onGameLoaded() {
     gameInstance.SendMessage("TelegramIntegration", "SetUserName", window.Telegram.WebApp.initData);
-}g
+}
