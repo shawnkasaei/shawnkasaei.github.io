@@ -1,8 +1,8 @@
 var buildUrl = "Build";
 var config = {
-    dataUrl: buildUrl + "/Build.data.br",
-    frameworkUrl: buildUrl + "/Build.framework.js.br",
-    codeUrl: buildUrl + "/Build.wasm.br",
+    dataUrl: buildUrl + "/Build.data",
+    frameworkUrl: buildUrl + "/Build.framework.js",
+    codeUrl: buildUrl + "/Build.wasm",
     streamingAssetsUrl: "StreamingAssets",
     companyName: "PAZH PLANET",
     productName: "PAZH COIN",
