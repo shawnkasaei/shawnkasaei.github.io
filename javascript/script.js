@@ -1,12 +1,12 @@
 var buildUrl = "Build";
 var config = {
-    dataUrl: buildUrl + "/Build.data",
-    frameworkUrl: buildUrl + "/Build.framework.js",
-    codeUrl: buildUrl + "/Build.wasm",
+    dataUrl: buildUrl + "/Build.data.br",
+    frameworkUrl: buildUrl + "/Build.framework.js.br",
+    codeUrl: buildUrl + "/Build.wasm.br",
     streamingAssetsUrl: "StreamingAssets",
     companyName: "PAZH PLANET",
     productName: "PAZH COIN",
-    productVersion: "0.5.1.15",
+    productVersion: "0.5.2.0",
   };
 var container = document.querySelector("#unity-container");
 var canvas = document.querySelector("#unity-canvas");
