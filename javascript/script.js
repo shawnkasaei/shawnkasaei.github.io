@@ -6,7 +6,7 @@ var config = {
     streamingAssetsUrl: "StreamingAssets",
     companyName: "PAZH PLANET",
     productName: "PAZH COIN",
-    productVersion: "0.5.2.1",
+    productVersion: "0.5.2.2",
   };
 var container = document.querySelector("#unity-container");
 var canvas = document.querySelector("#unity-canvas");
@@ -20,7 +20,7 @@ if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
 
 loadingBar.style.display = "block";
 
-var loaderUrl = buildUrl + "/Build.loader.js";
+var loaderUrl = buildUrl + "/Build.loader.js" + "?v=" + new Date().getTime();
 var script = document.createElement("script");
 script.src = loaderUrl;
 script.onload = () => {
