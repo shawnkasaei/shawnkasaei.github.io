@@ -2,13 +2,13 @@ if (window.indexedDB != null) window.indexedDB.deleteDatabase("/idbfs")
 
 var buildUrl = "Build";
 var config = {
-    dataUrl: buildUrl + "/e6bba730affab3d42f33b3f17645433c.data",
+    dataUrl: buildUrl + "/bbfdd921a1043bcaeced3f1a73c5e398.data",
     frameworkUrl: buildUrl + "/7f55f637c34f1e8288a1a4cf411bcf07.js",
     codeUrl: buildUrl + "/31ec6495b42d2d12b22739e1fa8613f7.wasm",
     streamingAssetsUrl: "StreamingAssets",
     companyName: "PAZH PLANET",
     productName: "PAZH COIN",
-    productVersion: "0.5.2.13",
+    productVersion: "0.5.2.14",
   };
 var container = document.querySelector("#unity-container");
 var canvas = document.querySelector("#unity-canvas");
