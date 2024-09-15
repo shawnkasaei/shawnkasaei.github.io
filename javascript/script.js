@@ -1,12 +1,28 @@
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js";
+import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-analytics.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyCFTjmT2AKkcB7_IodwCDHye0OpJA1jN2I",
+  authDomain: "pazh-9da5e.firebaseapp.com",
+  projectId: "pazh-9da5e",
+  storageBucket: "pazh-9da5e.appspot.com",
+  messagingSenderId: "208774180749",
+  appId: "1:208774180749:web:9d21688ee09369c06c57c4",
+  measurementId: "G-MYS5FGLM9K"
+};
+
+const db = firebaseApp.firestore();
+const auth = firebaseApp.auth();
+
 var buildUrl = "Build";
 var config = {
-    dataUrl: buildUrl + "/7ef96c12304b95270108eae43ffa01b2.data",
-    frameworkUrl: buildUrl + "/5a04318a1ad056fa003a20a480f2ed27.js",
-    codeUrl: buildUrl + "/74f3356836ff29e972fdb7f0c4cbcdab.wasm",
+    dataUrl: buildUrl + "/ec9c3e7d932bbc4477533e17a3926ec5.data",
+    frameworkUrl: buildUrl + "/5b920c7e1d3e73278a34756755584b63.js",
+    codeUrl: buildUrl + "/ca24fe735e581a95f50bb8c762e1b397.wasm",
     streamingAssetsUrl: "StreamingAssets",
     companyName: "PAZH PLANET",
     productName: "PAZH COIN",
-    productVersion: "0.5.2.18",
+    productVersion: "0.5.2.19",
   };
 var container = document.querySelector("#unity-container");
 var canvas = document.querySelector("#unity-canvas");
@@ -34,10 +50,6 @@ script.onload = () => {
     }).catch((message) => {
         alert(message);
     });
-};
-
-window.onbeforeunload = function (e) {
-    gameInstance.SendMessage("OnCloseListener", "OnClose");
 };
 
 document.body.appendChild(script);
