@@ -1,5 +1,3 @@
-if (window.indexedDB != null) window.indexedDB.deleteDatabase("/idbfs");
-
 var buildUrl = "Build";
 var config = {
     dataUrl: buildUrl + "/7ef96c12304b95270108eae43ffa01b2.data",
