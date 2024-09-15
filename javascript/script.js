@@ -1,8 +1,8 @@
 var buildUrl = "Build";
 var config = {
-    dataUrl: buildUrl + "/Build.data" + "?v=" + new Date().getTime(),
-    frameworkUrl: buildUrl + "/Build.framework.js" + "?v=" + new Date().getTime(),
-    codeUrl: buildUrl + "/Build.wasm" + "?v=" + new Date().getTime(),
+    dataUrl: buildUrl + "/baf78f1d5db7d19b64f6e8b2114d1d7f.data",
+    frameworkUrl: buildUrl + "/fad1a8ac27451f942030423074d5558a.js",
+    codeUrl: buildUrl + "/9ff93fc5fdcab8c1a010fe8416de83e3.wasm",
     streamingAssetsUrl: "StreamingAssets",
     companyName: "PAZH PLANET",
     productName: "PAZH COIN",
@@ -20,7 +20,7 @@ if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
 
 loadingBar.style.display = "block";
 
-var loaderUrl = buildUrl + "/Build.loader.js" + "?v=" + new Date().getTime();
+var loaderUrl = buildUrl + "/Build.loader.js";
 var script = document.createElement("script");
 script.src = loaderUrl;
 script.onload = () => {
