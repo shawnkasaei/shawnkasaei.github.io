@@ -13,13 +13,13 @@ const auth = firebaseApp.auth();
 
 var buildUrl = "Build";
 var config = {
-    dataUrl: buildUrl + "/94e4ada330788453ea8decfeba78db16.data",
-    frameworkUrl: buildUrl + "/5b920c7e1d3e73278a34756755584b63.js",
-    codeUrl: buildUrl + "/ca24fe735e581a95f50bb8c762e1b397.wasm",
+    dataUrl: buildUrl + "/fdcb3f3fa29447487cfc8931ec41a1fa.data",
+    frameworkUrl: buildUrl + "/5a04318a1ad056fa003a20a480f2ed27.js",
+    codeUrl: buildUrl + "/74f3356836ff29e972fdb7f0c4cbcdab.wasm",
     streamingAssetsUrl: "StreamingAssets",
     companyName: "PAZH PLANET",
     productName: "PAZH COIN",
-    productVersion: "0.5.3.1",
+    productVersion: "0.5.3.2",
   };
 var container = document.querySelector("#unity-container");
 var canvas = document.querySelector("#unity-canvas");
