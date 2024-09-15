@@ -1,12 +1,12 @@
 var buildUrl = "Build";
 var config = {
-    dataUrl: buildUrl + "/238ec352a3595bc50c60a1958d940ec5.data",
+    dataUrl: buildUrl + "/e38632e99a048a5c3cbab272cba75de5.data",
     frameworkUrl: buildUrl + "/5a04318a1ad056fa003a20a480f2ed27.js",
     codeUrl: buildUrl + "/74f3356836ff29e972fdb7f0c4cbcdab.wasm",
     streamingAssetsUrl: "StreamingAssets",
     companyName: "PAZH PLANET",
     productName: "PAZH COIN",
-    productVersion: "0.5.3.3",
+    productVersion: "0.5.3.5",
   };
 var container = document.querySelector("#unity-container");
 var canvas = document.querySelector("#unity-canvas");
@@ -20,7 +20,7 @@ if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
 
 loadingBar.style.display = "block";
 
-var loaderUrl = buildUrl + "/Build.loader.js";
+var loaderUrl = buildUrl + "/v0.5.3.4.loader.js";
 var script = document.createElement("script");
 script.src = loaderUrl;
 script.onload = () => {
