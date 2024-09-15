@@ -1,6 +1,3 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js";
-import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-analytics.js";
-
 const firebaseConfig = {
   apiKey: "AIzaSyCFTjmT2AKkcB7_IodwCDHye0OpJA1jN2I",
   authDomain: "pazh-9da5e.firebaseapp.com",
@@ -16,13 +13,13 @@ const auth = firebaseApp.auth();
 
 var buildUrl = "Build";
 var config = {
-    dataUrl: buildUrl + "/ec9c3e7d932bbc4477533e17a3926ec5.data",
+    dataUrl: buildUrl + "/b7ec1097e50fa8c30dc02fad5c546d5b.data",
     frameworkUrl: buildUrl + "/5b920c7e1d3e73278a34756755584b63.js",
     codeUrl: buildUrl + "/ca24fe735e581a95f50bb8c762e1b397.wasm",
     streamingAssetsUrl: "StreamingAssets",
     companyName: "PAZH PLANET",
     productName: "PAZH COIN",
-    productVersion: "0.5.2.19",
+    productVersion: "0.5.3.0",
   };
 var container = document.querySelector("#unity-container");
 var canvas = document.querySelector("#unity-canvas");
