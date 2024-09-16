@@ -20,6 +20,23 @@
         </div>
     </div>
     <script src="javascript/script.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.2/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.2/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.2/firebase-analytics-compat.js"></script>
+    <script>
+        const firebaseApp = firebase.initializeApp({
+            apiKey: "AIzaSyCFTjmT2AKkcB7_IodwCDHye0OpJA1jN2I",
+            authDomain: "pazh-9da5e.firebaseapp.com",
+            projectId: "pazh-9da5e",
+            storageBucket: "pazh-9da5e.appspot.com",
+            messagingSenderId: "208774180749",
+            appId: "1:208774180749:web:9d21688ee09369c06c57c4",
+            measurementId: "G-MYS5FGLM9K"
+        });
+        const db = firebaseApp.firestore();
+        const auth = firebaseApp.auth();
+    </script>
 </body>
 
 </html>
